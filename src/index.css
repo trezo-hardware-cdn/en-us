@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-gray-800 font-sans;
+  overflow-x: hidden;
+}
+
+.crypto-card {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.slick-dots li button:before {
+  color: #005C2F !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #005C2F !important;
+  opacity: 1;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #005C2F 0%, #00A651 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 92, 47, 0.1), 0 10px 10px -5px rgba(0, 92, 47, 0.04);
+}
+
+.hero-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 166, 81, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 0;
+}
